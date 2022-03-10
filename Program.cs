@@ -2,6 +2,7 @@
 {
     public int DICE_VALUE = 0;
     public int PLAYER_ONE = 0;
+    public int RAN_CHECK = 0;
     public void method1()
     {
         Console.WriteLine("welcome to snake and ladder game");
@@ -29,12 +30,32 @@
                 break;
         }
     }
-}
+    public void method2()
+    {
+        Random r2 = new Random();
+        RAN_CHECK = r2.Next(0, 3);
+        switch (RAN_CHECK)
+        {
+            case 0:
+                Console.WriteLine(" NO PLAY ");
+                break;
+            case 1:
+                Console.WriteLine(" LADDER");
+                break;
+            default:
+                Console.WriteLine(" SNAKE");
+                break;
+        }
+
+
+    }
+  }
 class Final
 {
    public static void Main(string[] args)
     {
     Gamer_S_L program_check = new Gamer_S_L();
         program_check.method1();
+        program_check.method2();
     }
 }

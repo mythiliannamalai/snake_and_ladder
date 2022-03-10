@@ -47,6 +47,10 @@
                         break;
                 }
                 DICE_ROLL_COUNT++;
+                if (PLAYER_ONE > 100)
+                {
+                    PLAYER_ONE = (PLAYER_ONE - DICE_VALUE);
+                }
                 Random r2 = new Random();
                 RAN_CHECK = r2.Next(0, 3);
                 switch (RAN_CHECK)

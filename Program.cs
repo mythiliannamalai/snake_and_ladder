@@ -67,6 +67,7 @@
                         break;
                 }
                 Console.WriteLine("Player 1: " + PLAYER_ONE);
+                Console.WriteLine("dice roll count : " + DICE_ROLL_COUNT);
 
             }
         }
